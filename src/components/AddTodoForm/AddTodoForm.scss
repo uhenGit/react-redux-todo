@@ -1,0 +1,25 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem 3rem;
+
+  input:first-child {
+    width: 30%;
+    font-size: 1rem;
+    padding: 4px;
+  }
+
+  .btn-block {
+    * {
+      padding: 2px 5px;
+      border-radius: 3px;
+    }
+    button {
+      margin-right: 1rem;
+      background-color: rgba($color: #fff, $alpha: 0.8);
+      color: rgba($color: #000, $alpha: 0.7);
+      border-color: #5f5f5f;
+    }
+  }
+}

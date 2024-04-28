@@ -1,0 +1,14 @@
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin: 1rem 3rem;
+
+  li {
+    list-style: none;
+
+    &:last-child {
+      margin-left: 1rem;
+    }
+  }
+}
