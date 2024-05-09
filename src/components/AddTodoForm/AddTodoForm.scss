@@ -13,13 +13,27 @@ form {
   .btn-block {
     * {
       padding: 2px 5px;
-      border-radius: 3px;
+      border-radius: 5px;
     }
     button {
       margin-right: 1rem;
       background-color: rgba($color: #fff, $alpha: 0.8);
       color: rgba($color: #000, $alpha: 0.7);
       border-color: #5f5f5f;
+    }
+  }
+}
+
+@media screen and (max-width: 810px) {
+  form {
+    input:first-child {
+      width: 90%;
+    }
+
+    .btn-block {
+      * {
+        padding: 5px 16px;
+      }
     }
   }
 }

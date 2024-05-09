@@ -34,3 +34,11 @@ table {
 .delete-btn.hide {
   opacity: 0;
 }
+
+@media screen and (max-width: 810px) {
+  table {
+    tr {
+      text-align: center;
+    }
+  }
+}

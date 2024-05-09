@@ -29,6 +29,11 @@ const AddTodoForm = ({ hideForm }: Props) => {
     setTodoText('');
     hideForm();
   }
+  const onBlurInput = (): void => {
+    if (isEmptyForm()) {
+      hideForm();
+    }
+  }
   const handleSubmit = (evt: FormEvent<HTMLFormElement>): void => {
     evt.preventDefault();
 
@@ -53,7 +58,7 @@ const AddTodoForm = ({ hideForm }: Props) => {
         type="text"
         value={todoText}
         onChange={handleInput}
-        onBlur={onHideForm}
+        onBlur={onBlurInput}
       />
       <div className="flex btn-block">
         <button
